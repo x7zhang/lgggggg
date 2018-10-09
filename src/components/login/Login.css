@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v7/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+body {
+	background-image: url("http://formulusblack.com/wp-content/themes/_formulus/assets/images/formulusblack_bg.jpg");
+	font-family: "Lato" ;
+}
+.login {
+	width:320px;
+	height: auto;
+	margin: auto;
+	margin-top: 8%;
+}
+
+.login_wrap {
+	background: #00000036;
+	height: 300px;
+}
+
+.login_wrap input {
+	border: none;
+	background: #32364a45;
+  font-family:Lato ;
+  font-weight:700 ;
+	display: block;
+	height: 40px;
+	outline: none;
+	width: calc(100% - 24px) ;
+	margin: auto;
+	padding: 6px 12px 6px 12px;
+}
+
+.login_official_icon {
+	margin: auto;
+	width: 65px;
+	height: 65px;
+	transform: rotateX(5deg) rotateZ(45deg);
+	background: black ;
+	position: relative;
+	bottom: -15px;
+
+}
+
+.login_official_icon img {
+	width: 55px;
+	height: 55px;
+	border:3px solid #fff;
+	display: block;
+
+}
+
+.login_field .login_icon_username {
+	background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'); 
+	background-repeat: no-repeat; 
+	background-position: 19px 19px;
+	text-indent:35px;
+
+}
+
+.login_field .login_icon_password {
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png');
+	background-repeat: no-repeat; 
+	background-position: 19px 19px;
+	text-indent:35px;
+	border-top: 1px solid #d1d1d1;
+}
+
+
+
+.login_field .login_field__submit {
+	top: 35px;
+    position: relative;
+    left: 0;
+    width: 80%;
+    right: 0;
+    margin: auto;
+}
+
+.login_field .login_field__submit input[type="submit"] {
+	border-radius: 50px;
+    float: left;
+    background: transparent;
+    padding: 10px 50px;
+    border: 2px solid #d1d1d1c1;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    font-size: 11px;
+    -webkit-transition-property: background,color;
+    -o-transition-property: background,color;
+    transition-property: background,color;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+    width: auto;
+    margin: 0;
+}
+
+.login_field .login_field__submit input[type="submit"]:hover {
+	color: white;
+  background: #6064799e;
+  border: 2px solid #606479;
+  cursor: pointer;
+  transition-property: background,color;
+  transition-duration: .2s;
+}
+
+.login_field .login_field__forgot {
+	float: right;
+    font-size: 10px;
+    margin-top: 11px;
+    text-decoration: underline;
+}
+
+.login_field .login_field__forgot a {
+    color: #606479;
+}

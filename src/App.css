@@ -1,0 +1,11 @@
+@import '~antd/dist/antd.css';
+
+.ant-layout-content {
+	background: #00000036;
+	color: #d1d1d1;
+}
+
+.ant-layout {
+	overflow-x: hidden;
+    background-image: url(http://formulusblack.com/wp-content/themes/_formulus/assets/images/formulusblack_bg.jpg);
+}
