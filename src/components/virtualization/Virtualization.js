@@ -1,5 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import Rtm from '../../containers/Virtualiz/rtm-container';
+
 
 class Virtualization extends React.Component {
 
@@ -7,6 +9,7 @@ class Virtualization extends React.Component {
     return (
       <div>
         Test Virtualization
+        <Rtm />
       </div>
     );
   }

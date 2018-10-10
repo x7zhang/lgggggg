@@ -16,7 +16,7 @@ const NoMatch = () => <p>Page Not Found</p>;
 const AppRoutes = (props) => (
   <Switch>
 
-    <Redirect exact from="/" to="/dashboard" />
+    <Redirect exact from="/" to="/virtualization" />
     <Route exact path="/dashboard" component={Dashboard} />
     <Route exact path="/diagnostics" component={Diagnostics} />
     <Route exact path="/eventLog" component={EventLog} />
