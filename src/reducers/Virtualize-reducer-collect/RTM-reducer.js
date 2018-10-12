@@ -9,6 +9,7 @@ import {
 
 
 const rtmInitialState = {
+	rtmName: null,
 	projectedSize: 0,
 	allocatedSize: 0,
 	LEMS: 0,
