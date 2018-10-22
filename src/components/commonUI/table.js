@@ -15,6 +15,7 @@ import TableCell from '@material-ui/core/TableCell';
 class CustomerTable extends Component {
   
   const { classes, tableHead, tableData, tableHeaderColor } = props;
+  console.log(tableData, "tableData");
   return (
     <div className={classes.tableResponsive}>
       <Table className={classes.table}>

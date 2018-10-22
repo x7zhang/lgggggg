@@ -38,15 +38,15 @@ const styles = {
 	};
 
 	let tableHeaderColor = 'yellow';
-	let tableHead = {['NAME', 'VM', 'SIZE', 'SNAPSHOTS']};
-	let tableData = {[
+	let tableHead = ['NAME', 'VM', 'SIZE', 'SNAPSHOTS'];
+	let tableData = [
 		["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
         ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
         ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
         ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
         ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
-		]};
+		];
 	tableData = addDeleteIcon(tableData);
 
 	addDeleteIcon = (tableData) => {
@@ -63,24 +63,27 @@ class Lems extends React.Component {
 
 	//  tabel
 	//material-ui
+	render() {
+		return (
+	  	<div>
+		  	  <CardHeader color="grey">
+		  	    <h4 className={"lems_table"}>LEMS Table</h4>
+		  	    <i class="material-icons" md-24>add_circle_outline</i>
+		  	  </CardHeader>
+		  	  <CardBody>
+		  	    <CustomerTable tableHeaderColor = {tableHeaderColor}
+		  	    	   tableHead = {tableHead}
+		  	    	   tableData = {tableData}
 
-	  return (
-	  	  <CardHeader color="grey">
-	  	    <h4 className={"lems_table"}>LEMS Table</h4>
-	  	    <i class="material-icons" md-24>add_circle_outline</i>
-	  	  </CardHeader>
-	  	  <CardBody>
-	  	    <CustomerTable tableHeaderColor = {tableHeaderColor}
-	  	    	   tableHead = {tableHead}
-	  	    	   tableData = {tableData}
-
-	  	    />
-	  	  </CardBody>
+		  	    />
+		  	  </CardBody>
+		 </div>
 	  	);
+	}
+	  
 
 
 };
 
 
-};
-export default Lems;
+export default Lems; 
